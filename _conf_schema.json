@@ -1,0 +1,14 @@
+{
+  "db_path": {
+    "description": "关系表文件（relations.db）的路径",
+    "type": "string",
+    "hint": "留空就用插件自己目录下的 relations.db；也可以把它指到别处，或设环境变量 WHALE_RELATIONS_DB",
+    "default": ""
+  },
+  "max_chars": {
+    "description": "每次查询最多回多少字",
+    "type": "int",
+    "hint": "默认 900；太长会占掉回复的上下文，4000 是上限",
+    "default": 900
+  }
+}
