@@ -4,6 +4,7 @@ desc: 用群聊里真实出现过的发言，回答「这人是谁、跟主人�
 help: 问她「群里那个 XX 是谁」「咱们群里都有谁」，她查得到人、说过多少话、有没有被她记住过
 version: 0.1.0
 author: zexuan604
+repo: https://github.com/f4890d/astrbot_plugin_whale_relations
 tags:
   - 关系
   - 群聊
