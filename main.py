@@ -42,7 +42,7 @@ class WhaleRelations(Star):
         try:
             return self._clip(find_people(query, db=self.db))
         except Exception as exc:  # noqa: BLE001
-            logger.warning(f"[whale_relations] 查询失败 query={query!r}: {exc}")
+            logger.warning(f"[whale_relations] 查询失败（query {len(query or '')} 字）: {exc}")
             return "关系表打不开，跟主人说一声。"
 
     @filter.llm_tool(name="group_roster")

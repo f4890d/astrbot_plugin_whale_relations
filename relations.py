@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """关系表的只读查询层：给「小鲸鱼」用的，纯标准库。"""
 from __future__ import annotations
 
@@ -38,7 +38,8 @@ def _person_line(row: sqlite3.Row) -> str:
 
 
 def find_people(query: str, db: str | Path | None = None, limit: int = 5) -> str:
-    q = (query or "").strip()
+    # 只取前 40 个字：拖长的查询会把 LIKE 拖慢，也说明这不是在找人
+    q = (query or "").strip()[:40]
     if not q:
         return "你要查谁？给我名字或者 QQ 号都行。"
     con = _connect(db)

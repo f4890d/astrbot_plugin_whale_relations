@@ -1,10 +1,10 @@
 name: astrbot_plugin_whale_relations
 display_name: 小鲸鱼的关系表
-desc: 用群聊里真实出现过的发言，回答「这人是谁、跟主人什么关系」；只读本地 SQLite，不猜关系、不外传
-help: 问她「群里那个 XX 是谁」「咱们群里都有谁」，她查得到人、说过多少话、有没有被她记住过
-version: 0.1.0
+desc: 用群聊里真实出现过的发言，回答「群里这人是谁」「跟主人什么关系」；只读本地关系库，不猜关系，没证据就说不知道。
+version: 0.1.1
 author: zexuan604
 repo: https://github.com/f4890d/astrbot_plugin_whale_relations
+help: 无需命令，她自己会调用（lookup_relation / group_roster）。
 tags:
   - 关系
   - 群聊
